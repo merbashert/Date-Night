@@ -5,7 +5,7 @@ class MovieSearch extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            baseURL: 'http://www.omdbapi.com/?',
+            baseURL: 'https://www.omdbapi.com/?',
             apikey: 'apikey=' + '8d4170a0',
             query: '&t=',
             movieTitle: '',
