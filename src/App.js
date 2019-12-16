@@ -47,6 +47,7 @@ class App extends React.Component {
                 moviename: dateData.moviename,
                 moviedate: dateData.moviedate,
                 moviesnack: dateData.moviesnack,
+                movieposter: dateData.movieposter,
                 id: dateData.id
             }
             break

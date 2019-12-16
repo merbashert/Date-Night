@@ -2,9 +2,9 @@
   "name": "date_movie_app",
   "version": "0.1.0",
   "engines": {
-  "node": "12.11.0",
-  "npm": "6.4.1"
-},
+    "node": "12.11.0",
+    "npm": "6.4.1"
+  },
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

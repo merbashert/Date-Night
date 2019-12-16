@@ -1,5 +1,4 @@
 import React from 'react';
-import filmIcon from './filmicon.jpg'
 
 class Form extends React.Component {
     constructor() {
@@ -43,7 +42,7 @@ class Form extends React.Component {
             moviename: this.props.formInputs.moviename,
             moviedate: this.props.formInputs.moviedate,
             moviesnack: this.props.formInputs.moviesnack,
-            movieposter: this.state.movieposter,
+            movieposter: this.props.formInputs.movieposter,
             id: this.props.formInputs.id
 
         })
@@ -69,7 +68,7 @@ class Form extends React.Component {
                     <label id="snack">
                     <input type="text" placeholder="What are you going to eat?" id="moviesnack" value={this.state.moviesnack} onChange={this.handleChange}></input>
                     </label>
-                    <input type="hidden" id="movieposter" value={this.state.movieposter} onChange={this.handleChange}/>
+                
                     <button className = "form-button">{this.props.view.button}</button>
                     <button className = "form-button" onClick={() => {this.props.handleView('home')}}>Cancel</button>
                     </form>

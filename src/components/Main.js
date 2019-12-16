@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Date from './Date.js'
 import Form from './Form.js'
 import MovieSearch from './MovieSearch'
@@ -28,7 +27,7 @@ class Main extends React.Component {
         }).catch(err=>console.log(err))
     }
 
-    handleCreate = (createData, savedMovie) => {
+    handleCreate = (createData, savedMovie, savedPoster) => {
         fetch(`${baseUrl}/dates`, {
             body: JSON.stringify(createData),
             method: 'POST',
@@ -43,7 +42,8 @@ class Main extends React.Component {
             this.props.handleView('home')
             this.setState({
                 dates: json,
-                savedMovie: savedMovie
+                savedMovie: savedMovie,
+                savedPoster: savedPoster
             })
         })
         .catch(err=>console.log(err))
