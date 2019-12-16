@@ -9,7 +9,7 @@ let baseUrl = '';
 if (process.env.NODE_ENV === 'development') {
     baseUrl = 'http://localhost:8888'
 } else {
-    console.log('this is for heroku');
+    baseUrl = 'https://stormy-castle-85822.herokuapp.com'
 }
 
 class Main extends React.Component {
